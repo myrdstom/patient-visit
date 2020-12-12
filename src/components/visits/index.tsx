@@ -8,15 +8,19 @@ import { Link, useParams, useHistory } from 'react-router-dom';
 import Loader from '../loader';
 
 interface RouteParams {
-    id: string
+    id: string;
 }
 
 const Visits = () => {
-    const { getVisits, patientVisits, getPatientVisits, loading, loadData } = useContext(
-        VisitContext
-    );
+    const {
+        getVisits,
+        patientVisits,
+        getPatientVisits,
+        loading,
+        loadData,
+    } = useContext(VisitContext);
     const { patient, getPatient } = useContext(PatientContext);
-    let {id} = useParams<RouteParams>();
+    let { id } = useParams<RouteParams>();
     let history = useHistory();
     useEffect(() => {
         loadData();

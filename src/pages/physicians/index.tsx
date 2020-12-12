@@ -1,9 +1,9 @@
 import React, { useEffect, useContext } from 'react';
 import { PhysicianContext } from '../../context/physicians/physicianState';
 import './physicians.styles.scss';
-import Table from '../table/table';
+import Table from '../../components/table/table';
 import { useParams, useHistory } from 'react-router-dom';
-import Loader from '../loader';
+import Loader from '../../components/loader';
 
 interface RouteParams {
     id: string
@@ -42,7 +42,7 @@ const Physicians = () => {
                 <Loader />
             ) : (
                 <div className="physician-table">
-                    <div className="table-titles">Physicians Seen</div>
+                    <div className="table-titles">Physician Seen</div>
                     <div className="nav-buttons">
                         <button onClick={() => history.goBack()}>
                             Go Back

@@ -1,22 +1,26 @@
 import React, { useEffect, useContext } from 'react';
 import { VisitContext } from '../../context/visits/visitState';
 import './visits.styles.scss';
-import Table from '../table/table';
+import Table from '../../components/table/table';
 import dayjs from 'dayjs';
 import { PatientContext } from '../../context/patients/patientState';
 import { Link, useParams, useHistory } from 'react-router-dom';
-import Loader from '../loader';
+import Loader from '../../components/loader';
 
 interface RouteParams {
-    id: string
+    id: string;
 }
 
 const Visits = () => {
-    const { getVisits, patientVisits, getPatientVisits, loading, loadData } = useContext(
-        VisitContext
-    );
+    const {
+        getVisits,
+        patientVisits,
+        getPatientVisits,
+        loading,
+        loadData,
+    } = useContext(VisitContext);
     const { patient, getPatient } = useContext(PatientContext);
-    let {id} = useParams<RouteParams>();
+    let { id } = useParams<RouteParams>();
     let history = useHistory();
     useEffect(() => {
         loadData();

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import dayjs from 'dayjs';
 import { PatientContext } from '../../context/patients/patientState';
 import './patients.styles.scss';
-import Table from '../table/table';
-import Loader from '../loader';
+import Table from '../../components/table/table';
+import Loader from '../../components/loader';
 
 const Patients = () => {
     const { getPatients, patients, loadData, loading } = useContext(

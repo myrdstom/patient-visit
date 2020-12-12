@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Patients from './components/patients';
-import Visits from './components/visits';
-import Physicians from "./components/physicians";
+import Patients from './pages/patients';
+import Visits from './pages/visits';
+import Physicians from './pages/physicians';
 import Header from './components/header';
 import { PatientProvider } from './context/patients/patientState';
 import { VisitProvider } from './context/visits/visitState';

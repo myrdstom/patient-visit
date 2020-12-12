@@ -5,13 +5,13 @@
     height: 90vh;
     padding: 3rem;
   }
-  
+
   .nav-buttons{
     display: flex;
     justify-content: space-between;
     margin: 0 15%;
   }
-  
+
   button{
     font-family: Poppins,Helvetica,sans-serif;
     font-size: 12px;
@@ -25,8 +25,14 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
   }
-  
-  
+
+  button:hover{
+    background: #224db3;
+    color: #fff;
+
+  }
+
+
   @media screen and (max-width: 992px) {
     .visit-table table tbody tr td:nth-child(1):before {
       content: "ID";
@@ -46,10 +52,9 @@
     .visit-table table tbody tr td:nth-child(6):before {
       content: "Diagnosis";
     }
-  
+
     .visit-table table tbody tr td:nth-child(7):before {
       content: "Physician Details";
     }
-  
+
   }
-  

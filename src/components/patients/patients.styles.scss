@@ -1,0 +1,81 @@
+.patients-table{
+    background: #eee;
+    width: 100vw;
+    height: 90vh;
+    padding: 3rem;
+  
+  }
+  
+  .table-titles{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .content{
+    border-radius: 0 25px 0 0;
+    background: #ffffff;
+    height: 100%;
+  
+  }
+  
+  .columns{
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width: 98%;
+    margin-left: 1%;
+    background: #eee;
+    line-height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .rows {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width: 98%;
+    margin-top: 2rem;
+    margin-left: 1%;
+    font-size: 0.8rem;
+  }
+  
+  .rows:nth-child(even){
+    background: #f7f5f5;
+    line-height: 3rem;
+  }
+  
+  .far{
+    color: #224db3;
+    margin-right: 0.5rem;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .patients-table table tbody tr td:nth-child(1):before {
+      content: "Patient ID";
+    }
+    .patients-table table tbody tr td:nth-child(2):before {
+      content: "Patient Name";
+    }
+    .patients-table table tbody tr td:nth-child(3):before {
+      content: "Email";
+    }
+    table tbody tr td:nth-child(4):before {
+      content: "Address";
+    }
+    table tbody tr td:nth-child(5):before {
+      content: "Phone";
+    }
+    table tbody tr td:nth-child(6):before {
+      content: "Date";
+    }
+  
+    table tbody tr td:nth-child(7):before {
+      content: "Visit Details";
+    }
+  
+  }
+  

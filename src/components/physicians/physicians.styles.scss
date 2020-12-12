@@ -1,0 +1,21 @@
+.physician-table{
+  background: #eee;
+  width: 100vw;
+  height: 90vh;
+  padding: 3rem;
+  margin: 0 auto;
+
+}
+
+
+@media screen and (max-width: 992px) {
+  .physician-table table tbody tr td:nth-child(1):before {
+    content: "ID";
+  }
+  .physician-table table tbody tr td:nth-child(2):before {
+    content: "Physician Name";
+  }
+  .physician-table table tbody tr td:nth-child(3):before {
+    content: "Phone";
+  }
+}

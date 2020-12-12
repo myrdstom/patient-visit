@@ -1,0 +1,55 @@
+
+.visit-table{
+    background: #eee;
+    width: 100vw;
+    height: 90vh;
+    padding: 3rem;
+  }
+  
+  .nav-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15%;
+  }
+  
+  button{
+    font-family: Poppins,Helvetica,sans-serif;
+    font-size: 12px;
+    color: #224db3;
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid #224db3;
+    border-radius: 40px;
+    background: transparent;
+    transition: all .3s ease 0s;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  
+  @media screen and (max-width: 992px) {
+    .visit-table table tbody tr td:nth-child(1):before {
+      content: "ID";
+    }
+    .visit-table table tbody tr td:nth-child(2):before {
+      content: "Patient Name";
+    }
+    .visit-table table tbody tr td:nth-child(3):before {
+      content: "Symptoms";
+    }
+    .visit-table table tbody tr td:nth-child(4):before {
+      content: "Date";
+    }
+    .visit-table table tbody tr td:nth-child(5):before {
+      content: "Location";
+    }
+    .visit-table table tbody tr td:nth-child(6):before {
+      content: "Diagnosis";
+    }
+  
+    .visit-table table tbody tr td:nth-child(7):before {
+      content: "Physician Details";
+    }
+  
+  }
+  

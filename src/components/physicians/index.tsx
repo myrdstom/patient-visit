@@ -3,7 +3,7 @@ import { PhysicianContext } from '../../context/physicians/physicianState';
 import './physicians.styles.scss';
 import Table from '../table/table';
 import { useParams, useHistory } from 'react-router-dom';
-import Loader from '../loader/loader';
+import Loader from '../loader';
 
 interface RouteParams {
     id: string
